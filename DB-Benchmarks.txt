@@ -1,0 +1,172 @@
+MongoDB 2.4.3
+Insert 127608 rows: 17.86667
+Create index: 14.66951
+Search Index: 0.01768
+Find by string contains: 0.03721
+Find by id: 0.11522
+1000 INSERTs: 0.09509
+25000 INSERTs in a transaction: 2.47788
+25000 INSERTs into an indexed table: 2.50635
+100 SELECTs without an index: 1.70445
+100 SELECTs on a string comparison: 2.88064
+Creating an index: 0.00027
+5000 SELECTs with an index: 4.46845
+1000 UPDATEs without an index: 1.51740
+25000 UPDATEs with an index: 1.86943
+25000 text UPDATEs with an index: 3.96473
+INSERTs from a SELECT: 8.94888
+DELETE without an index: 0.00009
+DELETE with an index: 0.00005
+A big INSERT after a big DELETE: 5.65973
+A big DELETE followed by many small INSERTs: 1.27760
+DROP TABLE: 0.01578
+Binary range seems to work.
+Insert large amount of test IP Addreses: 824.06385
+$VAR1 = {
+          'ok' => '1',
+          'n' => '10000000'
+        };
+$VAR1 = {
+          'a' => "\x{ff}\x{ff}\x{ff}\x{ff}\x{ff}\x{ff}\x{ff}\x{ff}_\x{8f}?\x{9f}o\x{f0}",
+          'b' => "\x{ff}\x{ff}\x{ff}\x{ff}\x{ff}\x{ff}\x{ff}\x{ff}_\x{8f}?\x{9f}o\x{ff}",
+          '_id' => bless( {
+                          'value' => '517f2b8cffbcb610025b29fb'
+                        }, 'MongoDB::OID' )
+        };
+Find one IP Address: 5.92847
+
+SQLite3 3.7.12.1
+Insert 127608 rows: 23.67114
+Create index: 3.72403
+Search Index: 0.00331
+Find by string contains: 0.03072
+Find by id: 0.16024
+1000 INSERTs: 1.81813
+25000 INSERTs in a transaction: 2.04020
+25000 INSERTs into an indexed table: 2.33659
+100 SELECTs without an index: 0.67285
+100 SELECTs on a string comparison: 1.24578
+Creating an index: 0.09293
+5000 SELECTs with an index: 0.47482
+1000 UPDATEs without an index: 0.25084
+25000 UPDATEs with an index: 1.43273
+25000 text UPDATEs with an index: 2.34430
+INSERTs from a SELECT: 0.20208
+DELETE without an index: 0.15024
+DELETE with an index: 2.04350
+A big INSERT after a big DELETE: 0.14055
+A big DELETE followed by many small INSERTs: 0.99803
+DROP TABLE: 0.02864
+Binary range seems to work.
+Insert large amount of test IP Addreses: 474.88479
+$VAR1 = {
+          'COUNT(*)' => 10000000
+        };
+$VAR1 = {
+          'c' => undef,
+          'a' => '????????_???o?',
+          'b' => '????????_???o?'
+        };
+Find one IP Address: 3.16895
+
+MySQL 5.6.10 InnoDB
+Insert 127608 rows: 166.73900
+Create index: 4.38940
+Search Index: 0.00782
+Find by string contains: 0.05098
+Find by id: 0.14827
+1000 INSERTs: 1.19199
+25000 INSERTs in a transaction: 18.25592
+25000 INSERTs into an indexed table: 18.30708
+100 SELECTs without an index: 1.15091
+100 SELECTs on a string comparison: 3.71783
+Creating an index: 0.29839
+5000 SELECTs with an index: 3.77709
+1000 UPDATEs without an index: 1.47334
+25000 UPDATEs with an index: 17.67512
+25000 text UPDATEs with an index: 18.79318
+INSERTs from a SELECT: 0.54077
+DELETE without an index: 0.16496
+DELETE with an index: 0.33108
+A big INSERT after a big DELETE: 0.59019
+A big DELETE followed by many small INSERTs: 8.94354
+DROP TABLE: 0.02368
+Binary range seems to work.
+Insert large amount of test IP Addreses: 6731.02201
+$VAR1 = {
+          'COUNT(*)' => '10000000'
+        };
+$VAR1 = {
+          'c' => undef,
+          'a' => '????????_???o?',
+          'b' => '????????_???o?'
+        };
+Find one IP Address: 9.34118
+
+MySQL 5.6.10 MyISAM
+Insert 127608 rows: 119.67051
+Create index: 5.90174
+Search Index: 0.17314
+Find by string contains: 0.04022
+Find by id: 0.05751
+1000 INSERTs: 1.13861
+25000 INSERTs in a transaction: 24.48944
+25000 INSERTs into an indexed table: 20.97616
+100 SELECTs without an index: 0.79451
+100 SELECTs on a string comparison: 2.84247
+Creating an index: 0.46834
+5000 SELECTs with an index: 3.90304
+1000 UPDATEs without an index: 3.07162
+25000 UPDATEs with an index: 17.56033
+25000 text UPDATEs with an index: 20.98868
+INSERTs from a SELECT: 0.35422
+DELETE without an index: 0.24055
+DELETE with an index: 0.55815
+A big INSERT after a big DELETE: 0.50878
+A big DELETE followed by many small INSERTs: 9.99112
+DROP TABLE: 0.00924
+Binary range seems to work.
+Insert large amount of test IP Addreses: 8020.03561
+$VAR1 = {
+          'COUNT(*)' => '10000000'
+        };
+$VAR1 = {
+          'c' => undef,
+          'a' => '????????_???o?',
+          'b' => '????????_???o?'
+        };
+Find one IP Address: 2.88980
+
+PostgreSQL 9.1.4
+Insert 127608 rows: 130.77080
+Create index: 6.60678
+Search Index: 0.00550
+Find by string contains: 0.01231
+Find by id: 0.02360
+1000 INSERTs: 1.39907
+25000 INSERTs in a transaction: 21.18136
+25000 INSERTs into an indexed table: 25.01201
+100 SELECTs without an index: 0.60641
+100 SELECTs on a string comparison: 0.89370
+Creating an index: 0.03078
+5000 SELECTs with an index: 4.54719
+1000 UPDATEs without an index: 0.99736
+25000 UPDATEs with an index: 23.16692
+25000 text UPDATEs with an index: 24.44646
+INSERTs from a SELECT: 0.75400
+DELETE without an index: 0.01990
+DELETE with an index: 0.28124
+A big INSERT after a big DELETE: 0.60484
+A big DELETE followed by many small INSERTs: 10.28418
+DROP TABLE: 0.00601
+Binary range seems to work.
+Insert large amount of test IP Addreses: 8811.93481
+$VAR1 = {
+          'count' => '10000000'
+        };
+$VAR1 = {
+          'c' => undef,
+          'a' => '????????_???o?',
+          'b' => '????????_???o?'
+        };
+Find one IP Address: 2.26947
